@@ -125,4 +125,4 @@ This implementation has been **mainly "vibe-coded"** under the time pressure of 
 - API costs are not bounded beyond `--max-tool-calls`;
 - log output and intermediate state are not persisted in a structured form.
 
-The vibe-coding took as a reference the **`ClaudeMCPConnector`** idea from [`rudof-project/LLM-KG-Bench-rudof`](https://github.com/rudof-project/LLM-KG-Bench-rudof) — specifically, the pattern of letting an LLM drive `rudof` through MCP tool calls inside a benchmarking loop.
+The vibe-coding took as a reference the **`ClaudeMCPConnector`** idea from [`rudof-project/LLM-KG-Bench-rudof`](https://github.com/rudof-project/LLM-KG-Bench-rudof) — specifically, the pattern of letting an LLM drive `rudof` through MCP tool calls inside a loop.
