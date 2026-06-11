@@ -115,7 +115,7 @@ All path flags have sensible defaults (see `src/cli.rs`), so the minimal invocat
 - `outputs/extracted_kg.ttl` — Turtle-star A-Box additions, every new `schema:suitableForDiet` carrying an RDF 1.2 reifier with `llm:LLM_id`, `llm:validationMethod`, and `ctx:extractedFrom`.
 - `outputs/conformance_report.ttl` — SHACL validation report from the independent verification pass; should report `sh:conforms true`.
 
-## ⚠️ Warning — vibe-coded hackathon implementation
+## Warning — vibe-coded hackathon implementation
 
 This implementation has been **mainly "vibe-coded"** under the time pressure of the GOBLIN Hackathon (8–9 June 2026, Oviedo). The pipeline works end-to-end on the supplied inputs and demonstrates the research idea, but the code has **not** been fully tested:
 
