@@ -1,0 +1,15 @@
+[package]
+name = "hackathon_metadata_provenance_kg"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+anyhow = "1.0"
+tokio = { version = "1.40", features = ["macros", "rt-multi-thread", "process", "io-util", "fs"] }
+async-openai = "0.27"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+clap = { version = "4.5", features = ["derive", "env"] }
+rmcp = { version = "=1.3.0", features = ["client", "transport-child-process"] }
+tracing = "0.1"
+tracing-subscriber = { version = "0.3", features = ["env-filter"] }

@@ -1,0 +1,3 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+_:1 sh:conforms true ;
+	a sh:ValidationReport .

@@ -1,0 +1,176 @@
+@prefix focosa-f: <https://dbwis.gitlab.io/focosa-svil/health-nutrition/food#> .
+@prefix focosa-h: <https://dbwis.gitlab.io/focosa-svil/health-nutrition/health#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:   <http://schema.org/> .
+@prefix llm:      <http://example.org/llm#> .
+@prefix ctx:      <http://example.org/context#> .
+
+focosa-f:WholeGrainWheatBread
+    a focosa-f:FoodItem ;
+    rdfs:label "Whole grain wheat bread" ;
+    schema:suitableForDiet focosa-h:VeganDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:LactosaFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .
+
+focosa-f:BrownRiceBoiled
+    a focosa-f:FoodItem ;
+    rdfs:label "Brown rice, boiled" ;
+    schema:suitableForDiet focosa-h:GlutenFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:LactosaFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:VeganDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .
+
+focosa-f:QuinoaBoiled
+    a focosa-f:FoodItem ;
+    rdfs:label "Quinoa, boiled" ;
+    schema:suitableForDiet focosa-h:GlutenFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:LactosaFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:VeganDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .
+
+focosa-f:RedLentilsBoiled
+    a focosa-f:FoodItem ;
+    rdfs:label "Red lentils, boiled" ;
+    schema:suitableForDiet focosa-h:GlutenFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:LactosaFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:VeganDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .
+
+focosa-f:FirmTofu
+    a focosa-f:FoodItem ;
+    rdfs:label "Firm tofu" ;
+    schema:suitableForDiet focosa-h:VeganDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:GlutenFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:LactosaFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .
+
+focosa-f:RawAlmonds
+    a focosa-f:FoodItem ;
+    rdfs:label "Raw almonds" ;
+    schema:suitableForDiet focosa-h:VeganDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:GlutenFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} ;
+    schema:suitableForDiet focosa-h:LactosaFreeDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .
+
+focosa-f:GrilledSalmon
+    schema:suitableForDiet focosa-h:PescatarianDiet
+    {|
+        llm:LLM_id "deepseek-chat" ;
+        llm:validationMethod "shacl" ;
+        ctx:extractedFrom <file:///home/samu/Projects/hackathon_on_metadata_and_provenance_for_kg/inputs/food_diet_expansion.txt>
+    |} .

@@ -1,0 +1,21 @@
+@prefix sh: <http://www.w3.org/ns/shacl#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix focosa-f: <https://dbwis.gitlab.io/focosa-svil/health-nutrition/food#> .
+@prefix schema: <http://schema.org/> .
+@prefix shapes: <http://example.org/shapes#> .
+@prefix llm: <http://example.org/llm#> .
+@prefix ctx: <http://example.org/context#> .
+
+shapes:FoodItemShape a sh:NodeShape ;
+    sh:targetClass focosa-f:FoodItem ;
+    sh:property [
+        sh:path schema:suitableForDiet ;
+        sh:nodeKind sh:IRI ;
+        sh:reifierShape shapes:ProvenanceShape ;
+        sh:reificationRequired true
+    ] .
+
+shapes:ProvenanceShape a sh:NodeShape ;
+    sh:property [ sh:path llm:LLM_id;          sh:minCount 1; sh:maxCount 1; sh:datatype xsd:string ] ;
+    sh:property [ sh:path llm:validationMethod; sh:minCount 1; sh:maxCount 1; sh:datatype xsd:string ] ;
+    sh:property [ sh:path ctx:extractedFrom;    sh:minCount 1; sh:maxCount 1; sh:nodeKind sh:IRI ] .

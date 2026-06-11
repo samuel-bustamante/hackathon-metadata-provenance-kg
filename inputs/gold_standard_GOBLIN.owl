@@ -1,0 +1,22 @@
+@prefix focosa-f: <https://dbwis.gitlab.io/focosa-svil/health-nutrition/food#> .
+@prefix focosa-h: <https://dbwis.gitlab.io/focosa-svil/health-nutrition/health#> .
+@prefix owl:      <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs:     <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix schema:   <http://schema.org/> .
+
+focosa-f:FoodItem        a owl:Class .
+focosa-h:RestrictedDiet  a owl:Class .
+
+focosa-h:VeganDiet a owl:Class ; rdfs:subClassOf focosa-h:RestrictedDiet .
+focosa-h:PescatarianDiet a owl:Class ; rdfs:subClassOf focosa-h:RestrictedDiet .
+focosa-h:GlutenFreeDiet a owl:Class ; rdfs:subClassOf focosa-h:RestrictedDiet .
+focosa-h:LactosaFreeDiet a owl:Class ; rdfs:subClassOf focosa-h:RestrictedDiet .
+
+schema:suitableForDiet a owl:ObjectProperty ;
+    rdfs:domain focosa-f:FoodItem ;
+    rdfs:range  focosa-h:RestrictedDiet .
+
+# Example instance.
+focosa-f:GrilledSalmon a focosa-f:FoodItem ;
+    rdfs:label "Grilled salmon" ;
+    schema:suitableForDiet focosa-h:PescatarianDiet .
