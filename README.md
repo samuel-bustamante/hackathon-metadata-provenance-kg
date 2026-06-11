@@ -117,12 +117,6 @@ All path flags have sensible defaults (see `src/cli.rs`), so the minimal invocat
 
 ## Warning — vibe-coded hackathon implementation
 
-This implementation has been **mainly "vibe-coded"** under the time pressure of the GOBLIN Hackathon (8–9 June 2026, Oviedo). The pipeline works end-to-end on the supplied inputs and demonstrates the research idea, but the code has **not** been fully tested:
-
-- error paths, retries, and timeouts are minimal;
-- prompts and SHACL shapes are tuned to the example corpus and may need adjustment for other domains;
-- there are no tests;
-- API costs are not bounded beyond `--max-tool-calls`;
-- log output and intermediate state are not persisted in a structured form.
+This implementation has been **mainly "vibe-coded"** under the time pressure of the GOBLIN Hackathon (8–9 June 2026, Oviedo). The pipeline works end-to-end on the supplied inputs and demonstrates the research idea, but the code has **not** been fully tested.
 
 The vibe-coding took as a reference the **`ClaudeMCPConnector`** idea from [`rudof-project/LLM-KG-Bench-rudof`](https://github.com/rudof-project/LLM-KG-Bench-rudof) — specifically, the pattern of letting an LLM drive `rudof` through MCP tool calls inside a loop.
