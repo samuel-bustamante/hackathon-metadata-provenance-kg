@@ -76,7 +76,7 @@ impl LlmClient {
         loop {
             let req = CreateChatCompletionRequestArgs::default()
                 .model(&self.model)
-                .temperature(0.0)
+                .temperature(0.1_f32)
                 .tools(tools.clone())
                 .messages(messages.clone())
                 .build()

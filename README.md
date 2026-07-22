@@ -103,7 +103,7 @@ The flow is:
 ```bash
 cargo build --release
 
-export QWEN_API_KEY=...            # or DEEPSEEK_API_KEY=...
+export QWEN_API_KEY=...
 export RUDOF_BIN=/path/to/rudof
 
 ./target/release/hackathon_metadata_provenance_kg --model qwen --ontology inputs/gold_standard_GOBLIN.owl --shapes inputs/shapes/provenance_shapes.ttl --corpus inputs/food_diet_expansion.txt --out-kg outputs/extracted_kg.ttl --out-report outputs/conformance_report.ttl --max-tool-calls 30

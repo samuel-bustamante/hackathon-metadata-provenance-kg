@@ -1,7 +1,5 @@
 use std::path::PathBuf;
-
 use anyhow::{Context, Result, bail};
-
 use crate::cli::{Cli, LlmProvider};
 
 pub struct Config {

@@ -1,9 +1,11 @@
 use std::path::PathBuf;
-
 use clap::{Parser, ValueEnum};
 
 #[derive(Parser, Debug)]
-#[command(name = "hackathon_metadata_provenance_kg", about = "Traceable RAG-based KG extension")]
+#[command(
+    name = "kg_augmentation_rdf1.2_shacl",
+    about = "Augments a knowledge graph with LLM-extracted A-Box assertions carrying RDF 1.2 statement-level provenance, validated in a SHACL tool-calling loop via the rudof MCP server"
+)]
 pub struct Cli {
     #[arg(long, value_enum)]
     pub model: LlmProvider,

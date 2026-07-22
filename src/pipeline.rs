@@ -11,7 +11,6 @@ use crate::{
 
 pub async fn run(cfg: Config) -> Result<()> {
     let ontology_ttl = std::fs::read_to_string(&cfg.ontology).context("reading ontology")?;
-    let shapes_ttl = std::fs::read_to_string(&cfg.shapes).context("reading shapes")?;
     let corpus_text = std::fs::read_to_string(&cfg.corpus).context("reading corpus")?;
 
     let abs_ontology = std::fs::canonicalize(&cfg.ontology).context("canonicalize ontology")?;
@@ -48,7 +47,6 @@ pub async fn run(cfg: Config) -> Result<()> {
 
     let sys = system_prompt(&abs_shapes.to_string_lossy());
     let usr = user_prompt(&corpus_text, &ontology_ttl, llm.model_id(), &document_iri);
-    let _ = shapes_ttl; // kept for future use; the shape is described inline in the prompt body.
 
     let result = llm
         .extract_with_validation(&sys, &usr, &mcp, &mcp_tools, cfg.max_tool_calls)
