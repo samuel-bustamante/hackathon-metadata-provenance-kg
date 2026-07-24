@@ -46,7 +46,7 @@ Given (a) an ontology, (b) a SHACL shapes file describing the required provenanc
 
 | Path | Role |
 | --- | --- |
-| `inputs/gold_standard_GOBLIN.owl` | Ontology + a small seed A-Box (FoCosa food/health vocabulary) |
+| `inputs/gold_standard.owl` | Ontology + a small seed A-Box (FoCosa food/health vocabulary) |
 | `inputs/shapes/provenance_shapes.ttl` | SHACL shapes — require RDF 1.2 reified provenance on every `schema:suitableForDiet` assertion |
 | `inputs/food_diet_expansion.txt` | Source corpus: short paragraphs describing diet suitability of common foods |
 | `outputs/extracted_kg.ttl` | Final, SHACL-conformant Turtle-star graph produced by the LLM |
@@ -106,7 +106,7 @@ cargo build --release
 export QWEN_API_KEY=...
 export RUDOF_BIN=/path/to/rudof
 
-./target/release/hackathon_metadata_provenance_kg --model qwen --ontology inputs/gold_standard_GOBLIN.owl --shapes inputs/shapes/provenance_shapes.ttl --corpus inputs/food_diet_expansion.txt --out-kg outputs/extracted_kg.ttl --out-report outputs/conformance_report.ttl --max-tool-calls 30
+./target/release/hackathon_metadata_provenance_kg --model qwen --ontology inputs/gold_standard.owl --shapes inputs/shapes/provenance_shapes.ttl --corpus inputs/food_diet_expansion.txt --out-kg outputs/extracted_kg.ttl --out-report outputs/conformance_report.ttl --max-tool-calls 30
 ```
 
 All path flags have sensible defaults (see `src/cli.rs`), so the minimal invocation is just `--model qwen` (or `--model deepseek`).

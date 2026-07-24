@@ -10,7 +10,7 @@ pub struct Cli {
     #[arg(long, value_enum)]
     pub model: LlmProvider,
 
-    #[arg(long, env = "ONTOLOGY_PATH", default_value = "inputs/gold_standard_GOBLIN.owl")]
+    #[arg(long, env = "ONTOLOGY_PATH", default_value = "inputs/gold_standard.owl")]
     pub ontology: PathBuf,
 
     #[arg(long, env = "SHAPES_PATH", default_value = "inputs/shapes/provenance_shapes.ttl")]
